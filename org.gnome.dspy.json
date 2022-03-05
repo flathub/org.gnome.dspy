@@ -27,7 +27,7 @@
         {
             "name" : "libsass",
             "buildsystem" : "meson",
-            "builddir" : true,
+            "cleanup": ["*"],
             "sources" : [
                 {
                     "type" : "git",
@@ -39,7 +39,7 @@
         {
             "name" : "sassc",
             "buildsystem" : "meson",
-            "builddir" : true,
+            "cleanup": ["*"],
             "sources" : [
                 {
                     "type" : "git",
@@ -49,13 +49,47 @@
             ]
         },
         {
-            "name" : "libadwaita",
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "pango",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit" : "03f159488ec3b8e3ea4c3c2daa9c408b071d512d"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/pango/1.50/pango-1.50.4.tar.xz",
+                    "sha256": "f4ad63e87dc2b145300542a4fb004d07a9f91b34152fae0ddbe50ecdd851c162"
+                }
+            ]
+        },
+        {
+            "name": "gtk",
+            "buildsystem": "meson",
+            "config-opts" : [
+                "-Dbuild-examples=false",
+                "-Dintrospection=disabled",
+                "-Dbuild-tests=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.1.tar.xz",
+                    "sha256" : "d85508d21cbbcd63d568a7862af5ecd63b978d7d5799cbe404c91d2389d0ec5f"
+                }
+            ]
+        },
+        {
+            "name": "libadwaita",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dintrospection=disabled",
+                "-Dgtk_doc=false",
+                "-Dtests=false",
+                "-Dexamples=false",
+                "-Dvapi=false"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libadwaita/1.0/libadwaita-1.0.2.tar.xz",
+                    "sha256" : "79e56011f5532fba6cb02531249d2bcfb8a6c42495c7a7de92f8819661fea091"
                 }
             ]
         },
