@@ -64,9 +64,18 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/chergert/d-spy.git",
-                    "commit": "85e405da58e39c67afe98785d4b16df26a1322dd"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/dspy/1.0/dspy-1.0.0.tar.xz",
+                    "sha256": "a5ec69ca1c605a66215e0bb2623127ab2a1e9a70cce7c5fd29eeb5356ba525f5",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "dspy",
+                        "stable-only": false
+                    }
+                },
+                {
+                    "type": "patch",
+                    "path": "appdata-screenshot.patch"
                 }
             ]
         }
