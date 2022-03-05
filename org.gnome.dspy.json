@@ -72,6 +72,10 @@
                         "name": "dspy",
                         "stable-only": false
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "appdata-screenshot.patch"
                 }
             ]
         }
