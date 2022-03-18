@@ -25,26 +25,30 @@
     ],
     "modules": [
         {
-            "name" : "libsass",
-            "buildsystem" : "meson",
-            "cleanup": ["*"],
-            "sources" : [
+            "name": "libsass",
+            "buildsystem": "meson",
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/libsass.git",
-                    "commit" : "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
+                    "type": "git",
+                    "url": "https://github.com/lazka/libsass.git",
+                    "commit": "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
                 }
             ]
         },
         {
-            "name" : "sassc",
-            "buildsystem" : "meson",
-            "cleanup": ["*"],
-            "sources" : [
+            "name": "sassc",
+            "buildsystem": "meson",
+            "cleanup": [
+                "*"
+            ],
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/sassc.git",
-                    "commit" : "82803377c33247265d779af034eceb5949e78354"
+                    "type": "git",
+                    "url": "https://github.com/lazka/sassc.git",
+                    "commit": "82803377c33247265d779af034eceb5949e78354"
                 }
             ]
         },
@@ -62,7 +66,7 @@
         {
             "name": "gtk",
             "buildsystem": "meson",
-            "config-opts" : [
+            "config-opts": [
                 "-Dbuild-examples=false",
                 "-Dintrospection=disabled",
                 "-Dbuild-tests=false"
@@ -71,7 +75,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.1.tar.xz",
-                    "sha256" : "d85508d21cbbcd63d568a7862af5ecd63b978d7d5799cbe404c91d2389d0ec5f"
+                    "sha256": "d85508d21cbbcd63d568a7862af5ecd63b978d7d5799cbe404c91d2389d0ec5f"
                 }
             ]
         },
@@ -89,7 +93,7 @@
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/libadwaita/1.0/libadwaita-1.0.2.tar.xz",
-                    "sha256" : "79e56011f5532fba6cb02531249d2bcfb8a6c42495c7a7de92f8819661fea091"
+                    "sha256": "79e56011f5532fba6cb02531249d2bcfb8a6c42495c7a7de92f8819661fea091"
                 }
             ]
         },
@@ -99,8 +103,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/dspy/1.0/dspy-1.0.0.tar.xz",
-                    "sha256": "a5ec69ca1c605a66215e0bb2623127ab2a1e9a70cce7c5fd29eeb5356ba525f5",
+                    "url": "https://download.gnome.org/sources/dspy/1.2/dspy-1.2.0.tar.xz",
+                    "sha256": "5ca2f4cf4d30d2f6bd9b539fb95ab9609c84d63cdeca70716f9d2373e3bdf6d4",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "dspy",
