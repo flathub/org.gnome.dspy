@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.dspy",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "d-spy",
     "finish-args": [
@@ -24,75 +24,6 @@
         "*.a"
     ],
     "modules": [
-        {
-            "name" : "libsass",
-            "buildsystem" : "meson",
-            "cleanup": ["*"],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/libsass.git",
-                    "commit" : "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-                }
-            ]
-        },
-        {
-            "name" : "sassc",
-            "buildsystem" : "meson",
-            "cleanup": ["*"],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/sassc.git",
-                    "commit" : "82803377c33247265d779af034eceb5949e78354"
-                }
-            ]
-        },
-        {
-            "name": "pango",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/pango/1.50/pango-1.50.4.tar.xz",
-                    "sha256": "f4ad63e87dc2b145300542a4fb004d07a9f91b34152fae0ddbe50ecdd851c162"
-                }
-            ]
-        },
-        {
-            "name": "gtk",
-            "buildsystem": "meson",
-            "config-opts" : [
-                "-Dbuild-examples=false",
-                "-Dintrospection=disabled",
-                "-Dbuild-tests=false"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gtk/4.6/gtk-4.6.1.tar.xz",
-                    "sha256" : "d85508d21cbbcd63d568a7862af5ecd63b978d7d5799cbe404c91d2389d0ec5f"
-                }
-            ]
-        },
-        {
-            "name": "libadwaita",
-            "buildsystem": "meson",
-            "config-opts": [
-                "-Dintrospection=disabled",
-                "-Dgtk_doc=false",
-                "-Dtests=false",
-                "-Dexamples=false",
-                "-Dvapi=false"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libadwaita/1.0/libadwaita-1.0.2.tar.xz",
-                    "sha256" : "79e56011f5532fba6cb02531249d2bcfb8a6c42495c7a7de92f8819661fea091"
-                }
-            ]
-        },
         {
             "name": "dspy",
             "buildsystem": "meson",
