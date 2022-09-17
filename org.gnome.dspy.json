@@ -30,11 +30,11 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/dspy/1.2/dspy-1.2.1.tar.xz",
-                    "sha256": "4e39c0d6da3af3b78901225dd151233857be221b5fb3ad82c1db1587236b6652",
+                    "url": "https://download.gnome.org/sources/dspy/1.2/dspy-1.4.0.tar.xz",
+                    "sha256": "eae8748cea624c5c4c75e021c2df1d7376e4f9f8fbe89ac4434911ecf7886772",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "dspy",
+                        "name": "d-spy",
                         "stable-only": false
                     }
                 }
