@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/d-spy/47/d-spy-47.0.tar.xz",
-                    "sha256": "effb30d432ad5e43e6c449bdf8e317da297e56e027416e73e2e96c4cf18f69e8",
+                    "url": "https://download.gnome.org/sources/d-spy/48/d-spy-48.beta.tar.xz",
+                    "sha256": "1968bc21c30c676ade7fb6f69fa55ca718cace26d5242909246a22dc521c9e10",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "d-spy",
