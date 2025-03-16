@@ -34,8 +34,7 @@
                     "sha256": "0f7a09019046194d97fc3c342b384ea1c380e10a9cfc8025bfcde57d595c3830",
                     "x-checker-data": {
                         "type": "gnome",
-                        "name": "d-spy",
-                        "stable-only": false
+                        "name": "d-spy"
                     }
                 }
             ]
