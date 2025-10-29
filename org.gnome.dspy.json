@@ -25,18 +25,18 @@
     ],
     "modules": [
         {
-            "name" : "libdex",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "libdex",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Ddocs=false",
                 "-Dexamples=false",
                 "-Dtests=false"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libdex.git",
-                    "tag" : "1.0.0"
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/libdex.git",
+                    "tag": "1.0.0"
                 }
             ]
         },
@@ -46,8 +46,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/d-spy/49/d-spy-49.1.tar.xz",
-                    "sha256": "e26e18120e64d451b61f202cfaa3913627a7031c2a954aecf391c83d83d09d8a",
+                    "url": "https://download.gnome.org/sources/d-spy/49/d-spy-49.2.tar.xz",
+                    "sha256": "b814ff27d828aabcda72f2c62f1b41d62035f743d06fd9a7e3c5c986c4879a69",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "d-spy"
